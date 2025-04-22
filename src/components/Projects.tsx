@@ -27,7 +27,7 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 0,
-    title: "CodeFAST – E-Learning Platform",
+    title: "CodeFAST – E-Learning Website",
     image: codefastweb,
     category: "Web Development",
     technologies: "React | Node.js | Express | MongoDB | TailwindCSS | JWT | Axios",
@@ -56,6 +56,16 @@ const projectsData: Project[] = [
     technologies: "C++ | SFML Graphics",
     description:
       "A classic Tetris game implementation with modern graphics and smooth controls. Features include score tracking, level progression, and special effects.",
+    githubLink: "https://github.com/ArbanArfan",
+  },
+  {
+    id: 7,
+    title: "CodeFats - Desktop Apllication",
+    image: codefast,
+    category: "Educational Software",
+    technologies: "Java | JavaFX | MYSQL | GRASP | GO4 | SceneBuilder",
+    description:
+      "A comprehensive e-learning platform with course management, student tracking, interactive lessons, and assessment tools.",
     githubLink: "https://github.com/ArbanArfan",
   },
   {
