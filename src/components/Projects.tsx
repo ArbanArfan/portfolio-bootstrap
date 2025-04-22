@@ -34,7 +34,7 @@ const projectsData: Project[] = [
     description:
       "A full-stack e-learning platform built for students of FAST University. Features include coding challenges, quizzes, public profiles, leaderboards, job portal, and admin analytics dashboard.",
     githubLink: "https://github.com/Zakariya0801/codefast-web",
-    liveLink: "https://codefast-web-sigma.vercel.app/login",
+    liveLink: "https://codefast-web-sigma.vercel.app/",
     videoUrl: "https://www.linkedin.com/posts/arban-arfan-633790313_codefast-webdevelopment-softwareengineering-activity-7319127006514712576-KOH-/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE-r4IcBXigWkYc2WWPd3KteDOC65Pf25x0", // Replace with real video link
   },
   {
@@ -46,7 +46,7 @@ const projectsData: Project[] = [
     description:
       "A collection of UI/UX designs for various applications, showcasing my skills in creating intuitive and visually appealing user interfaces.",
     githubLink: "https://github.com/ArbanArfan/Andaazepakwaan.git",
-    liveLink: "andazepakwaan.netlify.app",
+    liveLink: "https://andazepakwaan.netlify.app/",
   },
   {
     id: 1,
