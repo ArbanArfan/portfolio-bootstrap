@@ -212,7 +212,7 @@ const Services = () => {
               {selectedService?.title}
             </Modal.Title>
             <Button variant="link" className="close-button" onClick={handleCloseModal}>
-              <X size={24} direction={20}/>
+              <X size={24} />
             </Button>
           </Modal.Header>
           <Modal.Body>
