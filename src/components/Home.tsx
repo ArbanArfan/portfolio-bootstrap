@@ -1,5 +1,5 @@
 "use client"
-
+import mypic from "/src/assets/mypic.jpg"
 import { Container, Row, Col, Button } from "react-bootstrap"
 import { Facebook, Instagram, Linkedin, Github } from 'lucide-react'
 import { TypeAnimation } from "react-type-animation"
@@ -115,7 +115,7 @@ const Home = () => {
             >
               <div className="profile-image-wrapper">
                 <div className="profile-border">
-                  <img src="/src/assets/mypic.jpg" alt="Arban Arfan" className="profile-image" />
+                  <img src={mypic} alt="Arban Arfan" className="profile-image" />
                 </div>
               </div>
             </motion.div>
