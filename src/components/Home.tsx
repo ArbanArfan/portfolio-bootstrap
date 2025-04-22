@@ -5,9 +5,11 @@ import { Facebook, Instagram, Linkedin, Github } from 'lucide-react'
 import { TypeAnimation } from "react-type-animation"
 import { motion } from "framer-motion"
 import { useEffect, useRef } from "react"
+import { useNavigate } from "react-router-dom"
 
 const Home = () => {
   const imageRef = useRef<HTMLDivElement>(null)
+  const navigate = useNavigate()
 
   // Add animation effect when component is in view
   useEffect(() => {
@@ -15,7 +17,6 @@ const Home = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // Add animation class when in view
             if (imageRef.current) {
               imageRef.current.classList.add("animate-pulse")
               setTimeout(() => {
@@ -79,15 +80,27 @@ const Home = () => {
                 >
                   <Instagram size={24} />
                 </a>
-                <a href="https://www.linkedin.com/in/arban-arfan-633790313/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.linkedin.com/in/arban-arfan-633790313/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Linkedin size={24} />
                 </a>
-                <a href="https://github.com/ArbanArfan/Andaazepakwaan.git" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/ArbanArfan/Andaazepakwaan.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Github size={24} />
                 </a>
               </div>
 
-              <Button variant="primary" className="download-btn mt-4" href="/resume">
+              <Button
+                variant="primary"
+                className="download-btn mt-4"
+                onClick={() => navigate("/resume")}
+              >
                 View Resume
               </Button>
 
