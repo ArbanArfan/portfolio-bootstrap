@@ -1,26 +1,57 @@
 "use client"
-
+import codefast from "/src/assets/codefast.jpg"
+import andazepakwan from "/src/assets/AndazePakwan.jpg"
+import fms from "/src/assets/fms.jpg"
+import pacman from "/src/assets/pacman.jpg"
+import gym from "/src/assets/gym.jpg"
+import spaceShooter from "/src/assets/SpaceShooter.jpg"
+import tetris from "/src/assets/tetris.jpeg"
+import codefastweb from "/src/assets/codefastweb.jpg"
 import { useState } from "react"
 import { Container, Row, Col, Card, Button, Modal } from "react-bootstrap"
 import { motion } from "framer-motion"
-import { ExternalLink, Github } from 'lucide-react'
+import { ExternalLink, Github } from "lucide-react"
 
 interface Project {
   id: number
   title: string
-  image: string
+  image: any
   category: string
   technologies: string
   description: string
   githubLink?: string
   liveLink?: string
+  videoUrl?: string
 }
 
 const projectsData: Project[] = [
   {
+    id: 0,
+    title: "CodeFAST – E-Learning Platform",
+    image: codefastweb,
+    category: "Web Development",
+    technologies: "React | Node.js | Express | MongoDB | TailwindCSS | JWT | Axios",
+    description:
+      "A full-stack e-learning platform built for students of FAST University. Features include coding challenges, quizzes, public profiles, leaderboards, job portal, and admin analytics dashboard.",
+    githubLink: "https://github.com/Zakariya0801/codefast-web",
+    liveLink: "https://codefast-web-sigma.vercel.app/login",
+    videoUrl: "https://www.linkedin.com/posts/arban-arfan-633790313_codefast-webdevelopment-softwareengineering-activity-7319127006514712576-KOH-/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE-r4IcBXigWkYc2WWPd3KteDOC65Pf25x0", // Replace with real video link
+  },
+  {
+    id: 2,
+    title: "UI/UX Design Portfolio",
+    image: andazepakwan,
+    category: "UI/UX Design",
+    technologies: "UI/UX | Figma | HTML | CSS | JavaScript",
+    description:
+      "A collection of UI/UX designs for various applications, showcasing my skills in creating intuitive and visually appealing user interfaces.",
+    githubLink: "https://github.com/ArbanArfan/Andaazepakwaan.git",
+    liveLink: "andazepakwaan.netlify.app",
+  },
+  {
     id: 1,
     title: "Tetris Game",
-    image: "/src/assets/tetris.jpeg",
+    image: tetris,
     category: "Game Development",
     technologies: "C++ | SFML Graphics",
     description:
@@ -28,19 +59,9 @@ const projectsData: Project[] = [
     githubLink: "https://github.com/ArbanArfan",
   },
   {
-    id: 2,
-    title: "SpaceShooter Game",
-    image: "/src/assets/SpaceShooter.jpg",
-    category: "Game Development",
-    technologies: "C++ | SFML Graphics | OOP",
-    description:
-      "An action-packed space shooter game with multiple enemy types, power-ups, and level progression. Built using object-oriented programming principles.",
-    githubLink: "https://github.com/ArbanArfan",
-  },
-  {
     id: 3,
     title: "File Management System",
-    image: "/src/assets/fms.jpg",
+    image: fms,
     category: "System Development",
     technologies: "C++ | Data Structures | Trees | Stacks | Priority Queue | AVL Trees | Red & Black Tree",
     description:
@@ -50,7 +71,7 @@ const projectsData: Project[] = [
   {
     id: 4,
     title: "Gym Management System",
-    image: "/src/assets/gym.jpg",
+    image: gym,
     category: "Desktop Application",
     technologies: "C# | .Net | SQL | Database",
     description:
@@ -60,7 +81,7 @@ const projectsData: Project[] = [
   {
     id: 5,
     title: "Pacman Game",
-    image: "/src/assets/pacman.jpg",
+    image: pacman,
     category: "Game Development",
     technologies: "C++ | Multi-Threading | Synchronization | SFML",
     description:
@@ -69,24 +90,15 @@ const projectsData: Project[] = [
   },
   {
     id: 6,
-    title: "E-Learning Platform",
-    image: "/src/assets/codefast.jpg",
-    category: "Educational Software",
-    technologies: "Java | JavaFX | MYSQL | GRASP | GO4 | SceneBuilder",
+    title: "SpaceShooter Game",
+    image: spaceShooter,
+    category: "Game Development",
+    technologies: "C++ | SFML Graphics | OOP",
     description:
-      "A comprehensive e-learning platform with course management, student tracking, interactive lessons, and assessment tools.",
+      "An action-packed space shooter game with multiple enemy types, power-ups, and level progression. Built using object-oriented programming principles.",
     githubLink: "https://github.com/ArbanArfan",
   },
-  {
-    id: 7,
-    title: "UI/UX Design Portfolio",
-    image: "/src/assets/AndazePakwan.jpg",
-    category: "UI/UX Design",
-    technologies: "UI/UX | Figma | HTML | CSS | JavaScript",
-    description:
-      "A collection of UI/UX designs for various applications, showcasing my skills in creating intuitive and visually appealing user interfaces.",
-    githubLink: "https://github.com/ArbanArfan/Andaazepakwaan.git",
-  },
+ 
 ]
 
 const Projects = () => {
@@ -111,9 +123,7 @@ const Projects = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title text-center" data-aos="fade-up">
-            Projects
-          </h2>
+          <h2 className="section-title text-center">Projects</h2>
           <div className="section-divider"></div>
         </motion.div>
 
@@ -126,7 +136,7 @@ const Projects = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className="project-card h-100" data-aos="fade-up" data-aos-delay={index * 100}>
+                <Card className="project-card h-100">
                   <div className="project-image-container">
                     <Card.Img variant="top" src={project.image} className="project-image" />
                     <div className="project-overlay">
@@ -145,7 +155,7 @@ const Projects = () => {
           ))}
         </Row>
 
-        {/* Project Details Modal */}
+        {/* Modal */}
         <Modal show={showModal} onHide={handleCloseModal} centered size="lg" className="project-modal">
           <Modal.Header closeButton>
             <Modal.Title>{selectedProject?.title}</Modal.Title>
@@ -167,7 +177,7 @@ const Projects = () => {
                   <p>{selectedProject.technologies}</p>
                   <h5>Category</h5>
                   <p>{selectedProject.category}</p>
-                  <div className="project-links">
+                  <div className="project-links mt-3">
                     {selectedProject.githubLink && (
                       <a
                         href={selectedProject.githubLink}
@@ -183,9 +193,19 @@ const Projects = () => {
                         href={selectedProject.liveLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-primary"
+                        className="btn btn-primary me-2"
                       >
                         <ExternalLink size={18} className="me-1" /> Live Demo
+                      </a>
+                    )}
+                    {selectedProject.videoUrl && (
+                      <a
+                        href={selectedProject.videoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-danger"
+                      >
+                        <ExternalLink size={18} className="me-1" /> Watch Video
                       </a>
                     )}
                   </div>

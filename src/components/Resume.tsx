@@ -1,5 +1,5 @@
 "use client"
-
+import mypic from "/src/assets/mypic.jpg"
 import { Container, Row, Col, Badge, Card } from "react-bootstrap"
 import { motion } from "framer-motion"
 import { Mail, Phone, MapPin, Calendar, Award, BookOpen, Briefcase, Code } from "lucide-react"
@@ -41,7 +41,7 @@ const Resume = () => {
             >
               <div className="personal-info-card">
                 <div className="profile-image-wrapper">
-                  <img src="/src/assets/mypic.jpg" alt="Arban Arfan" className="profile-image" />
+                  <img src={mypic} alt="Arban Arfan" className="profile-image" />
                   <div className="image-border"></div>
                 </div>
 

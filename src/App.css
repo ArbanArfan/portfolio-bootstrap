@@ -1342,3 +1342,13 @@ section {
   color: var(--text-muted);
   text-align: center;
 }
+.service-modal .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  color: #f7f4f4;
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+}

@@ -1,5 +1,5 @@
 "use client"
-
+import mypic from "/src/assets/mypic.jpg"
 import { Container, Row, Col } from "react-bootstrap"
 import { motion } from "framer-motion"
 
@@ -34,7 +34,7 @@ const About = () => {
                 <div className="frame-border frame-border-2"></div>
                 <div className="frame-border frame-border-3"></div>
                 <div className="image-container">
-                  <img src="/src/assets/mypic.jpg" alt="Arban Arfan" className="about-image" />
+                  <img src= {mypic} alt="Arban Arfan" className="about-image" />
                 </div>
               </div>
             </motion.div>
