@@ -6,7 +6,7 @@ import pacman from "/src/assets/pacman.jpg"
 import gym from "/src/assets/gym.jpg"
 import spaceShooter from "/src/assets/SpaceShooter.jpg"
 import tetris from "/src/assets/tetris.jpeg"
-import codefastweb from "/src/assets/codeFastWeb.jpg"
+import CodeFastWeb from "/src/assets/CodeFastWeb.jpg"
 import { useState } from "react"
 import { Container, Row, Col, Card, Button, Modal } from "react-bootstrap"
 import { motion } from "framer-motion"
@@ -28,7 +28,7 @@ const projectsData: Project[] = [
   {
     id: 0,
     title: "CodeFAST – E-Learning Website",
-    image: codefastweb,
+    image: CodeFastWeb,
     category: "Web Development",
     technologies: "React | Node.js | Express | MongoDB | TailwindCSS | JWT | Axios",
     description:
