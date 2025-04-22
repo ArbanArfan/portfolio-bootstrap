@@ -20,7 +20,7 @@ const projectsData: Project[] = [
   {
     id: 1,
     title: "Tetris Game",
-    image: "/Images/tetris.jpeg",
+    image: "/src/assets/tetris.jpeg",
     category: "Game Development",
     technologies: "C++ | SFML Graphics",
     description:
@@ -30,7 +30,7 @@ const projectsData: Project[] = [
   {
     id: 2,
     title: "SpaceShooter Game",
-    image: "/Images/SpaceShooter.jpg",
+    image: "/src/assets/SpaceShooter.jpg",
     category: "Game Development",
     technologies: "C++ | SFML Graphics | OOP",
     description:
@@ -40,7 +40,7 @@ const projectsData: Project[] = [
   {
     id: 3,
     title: "File Management System",
-    image: "/Images/fms.jpg",
+    image: "/src/assets/fms.jpg",
     category: "System Development",
     technologies: "C++ | Data Structures | Trees | Stacks | Priority Queue | AVL Trees | Red & Black Tree",
     description:
@@ -50,7 +50,7 @@ const projectsData: Project[] = [
   {
     id: 4,
     title: "Gym Management System",
-    image: "/Images/gym.jpg",
+    image: "/src/assets/gym.jpg",
     category: "Desktop Application",
     technologies: "C# | .Net | SQL | Database",
     description:
@@ -60,7 +60,7 @@ const projectsData: Project[] = [
   {
     id: 5,
     title: "Pacman Game",
-    image: "/Images/pacman.jpg",
+    image: "/src/assets/pacman.jpg",
     category: "Game Development",
     technologies: "C++ | Multi-Threading | Synchronization | SFML",
     description:
@@ -70,7 +70,7 @@ const projectsData: Project[] = [
   {
     id: 6,
     title: "E-Learning Platform",
-    image: "/Images/codefast.jpg",
+    image: "/src/assets/codefast.jpg",
     category: "Educational Software",
     technologies: "Java | JavaFX | MYSQL | GRASP | GO4 | SceneBuilder",
     description:
@@ -80,7 +80,7 @@ const projectsData: Project[] = [
   {
     id: 7,
     title: "UI/UX Design Portfolio",
-    image: "/Images/AndazePakwan.jpg",
+    image: "/src/assets/AndazePakwan.jpg",
     category: "UI/UX Design",
     technologies: "UI/UX | Figma | HTML | CSS | JavaScript",
     description:

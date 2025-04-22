@@ -41,7 +41,7 @@ const Resume = () => {
             >
               <div className="personal-info-card">
                 <div className="profile-image-wrapper">
-                  <img src="/Images/mypic.jpg" alt="Arban Arfan" className="profile-image" />
+                  <img src="/src/assets/mypic.jpg" alt="Arban Arfan" className="profile-image" />
                   <div className="image-border"></div>
                 </div>
 

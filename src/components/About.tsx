@@ -34,7 +34,7 @@ const About = () => {
                 <div className="frame-border frame-border-2"></div>
                 <div className="frame-border frame-border-3"></div>
                 <div className="image-container">
-                  <img src="/Images/mypic.jpg" alt="Arban Arfan" className="about-image" />
+                  <img src="/src/assets/mypic.jpg" alt="Arban Arfan" className="about-image" />
                 </div>
               </div>
             </motion.div>

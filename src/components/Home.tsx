@@ -115,7 +115,7 @@ const Home = () => {
             >
               <div className="profile-image-wrapper">
                 <div className="profile-border">
-                  <img src="/Images/mypic.jpg" alt="Arban Arfan" className="profile-image" />
+                  <img src="/src/assets/mypic.jpg" alt="Arban Arfan" className="profile-image" />
                 </div>
               </div>
             </motion.div>
