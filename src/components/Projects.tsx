@@ -7,6 +7,7 @@ import gym from "/src/assets/gym.jpg"
 import spaceShooter from "/src/assets/SpaceShooter.jpg"
 import tetris from "/src/assets/tetris.jpeg"
 import CodeFastWeb from "/src/assets/CodeFastWeb.jpg"
+import SaudiRide from "/src/assets/SaudiRide.png"
 import { useState } from "react"
 import { Container, Row, Col, Card, Button, Modal } from "react-bootstrap"
 import { motion } from "framer-motion"
@@ -37,6 +38,17 @@ const projectsData: Project[] = [
     liveLink: "https://codefast-web-sigma.vercel.app/",
     videoUrl: "https://www.linkedin.com/posts/arban-arfan-633790313_codefast-webdevelopment-softwareengineering-activity-7319127006514712576-KOH-/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE-r4IcBXigWkYc2WWPd3KteDOC65Pf25x0", // Replace with real video link
   },
+   {
+    id: 1,
+    title: "SaudiRide - Transport Service",
+    image: SaudiRide,
+    category: "Web Development",
+    technologies: "React | Node.js | Express | TailwindCSS | WebSockets | API Integration",
+    description:
+      "Developed a high-end transport booking platform for Saudi Arabia, handling full-stack development from UI design to deployment. Integrated WhatsApp and email APIs for seamless booking confirmation and communication",
+    liveLink: "https://saudiride.com/",
+  },
+
   {
     id: 2,
     title: "UI/UX Design Portfolio",
@@ -49,7 +61,7 @@ const projectsData: Project[] = [
     liveLink: "https://andazepakwaan.netlify.app/",
   },
   {
-    id: 1,
+    id: 8,
     title: "Tetris Game",
     image: tetris,
     category: "Game Development",
